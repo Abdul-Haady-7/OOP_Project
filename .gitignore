@@ -1,0 +1,18 @@
+# --- Visual Studio Junk ---
+.vs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+*.user
+*.suo
+
+# --- Compiled C++ Files ---
+*.obj
+*.pdb
+*.log
+*.tlog
+*.lastbuildstate
+*.idb
+*.exe
+*.dll
