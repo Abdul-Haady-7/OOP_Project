@@ -19,9 +19,9 @@ class page
 {
 private:
 	string pageID;
-	user owner;
+	user** owner;
 	string title;
-	post* postArr;
+	post** postArr;
 	int pageLikes;
 public:
 
@@ -33,8 +33,8 @@ private:
 	string postID;
 	string text;
 	int postLikes;
-	comment details;
-	activity type;
+	comment** details;
+	activity** type;
 public:
 };
 
@@ -43,6 +43,7 @@ class comment
 private:
 	string commentID;
 	string text;
+	static int commentCount;
 public:
 
 };
