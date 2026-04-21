@@ -2,17 +2,9 @@
 #include <iostream>
 using namespace std;
 
-int strLength(const char* arr)
-{
-	int i = 0;
 
-	while (*(arr+i) != '\0')
-	{
-		i++;
-	}
-	return i;
-}
 
+// Classes
 class user
 {
 private:
@@ -26,7 +18,7 @@ public:
 class page
 {
 private:
-	string postID;
+	string pageID;
 	user owner;
 	string title;
 	post* postArr;
@@ -36,16 +28,23 @@ public:
 };
 
 
-
 class post { //make a date class or smth to store dates and time
 private:
 	string postID;
 	string text;
 	int postLikes;
-	string* comments;
-	int commentCount;
+	comment details;
 	activity type;
 public:
+};
+
+class comment
+{
+private:
+	string commentID;
+	string text;
+public:
+
 };
 
 class activity {
